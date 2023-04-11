@@ -7,6 +7,7 @@
     https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py
 
 '''
+
 import openai
 
 # Define OpenAI API key 
