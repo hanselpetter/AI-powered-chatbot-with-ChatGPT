@@ -1,17 +1,18 @@
 # API-Tutoriel
+This project is for practicing APIs integration and Flask.
 
-## software tools
+## 1. Software Tools
 
-## Architechtures
-### Apllications architechtures
+## 2. Architechtures
+### a. Apllications Architechtures
 
-### CI/CD
+### b. CI/CD Pipeline
 This is the workflow of the pipeline.
 
 ![](images/api1.png)
 
 
-## Sources
+## Sources Visited
 
-1. [python script sources](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py
-)
+1. [python script sources](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
+2. 
