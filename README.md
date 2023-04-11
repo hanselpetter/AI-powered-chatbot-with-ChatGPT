@@ -8,7 +8,7 @@
 ### CI/CD
 This is the workflow of the pipeline.
 
-![](/python-api/images/api1.png)
+![](images/api1.png)
 
 
 ## Sources
