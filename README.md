@@ -9,7 +9,11 @@ This project is for practicing APIs integration and Flask.
 ### b. CI/CD Pipeline
 This is the workflow of the pipeline.
 
-![](images/api1.png)
+<img src="images/api1.png" width=40% height=40%>
+
+
+
+
 
 
 ## Sources Visited
