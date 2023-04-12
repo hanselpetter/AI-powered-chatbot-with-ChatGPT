@@ -9,9 +9,9 @@ This project is for practicing APIs integration and Flask.
 ### b. CI/CD Pipeline
 This is the workflow of the pipeline.
 
-![](images/api1.png)
+<!-- ![](images/api1.png) -->
 
-
+<img src="images/api1.png" width=50% height=50%>
 ## Sources Visited
 
 1. [python script sources](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
