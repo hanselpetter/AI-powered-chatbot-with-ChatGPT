@@ -7,11 +7,11 @@
     https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py
 
 '''
-
+import os
 import openai
 
 # Define OpenAI API key 
-openai.api_key = "add_key_value_here"
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Function
 def _turbo():
