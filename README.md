@@ -18,5 +18,5 @@ This is the workflow of the pipeline.
 
 ## Sources Visited
 
-1. [python script sources](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
-2. 
+1. Python script [source](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
+2. Set up Environment Variable for [API Key](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)
