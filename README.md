@@ -33,14 +33,14 @@ We are building Flask web applications with a user interfaces:
 python3 -m venv virtual_environment_name
 ```
 
-<img src="images/api2.PNG" width=100% height=100%>
+<img src="images/api2.PNG" width=60% height=60%>
 
 3. Activate the virtial environment
 ```
 source virtual_environment_name/bin/activate
 ```
 
-<img src="images/api3.PNG" width=100% height=100%>
+<img src="images/api3.PNG" width=60% height=60%>
 
 **Note**: Use a `.gitignore` file to avoid inporting the virtual environment folder (and/or other unwanted files) to GitHub. <br> Use `deactivate` to deactivate the virtual environment.
 
@@ -55,7 +55,7 @@ pip install pytube3
 pip install youtube_transcript_api
 ```
 
-<img src="images/api4.PNG" width=100% height=100%>
+<img src="images/api4.PNG" width=60% height=60%>
 
 * You can also add the `requirements.txt` file in your project folder and install from it by using the command below.
 ```
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 ```
 Here is how to get the `requirements.txt` file.
 
-<img src="images/api5.PNG" width=100% height=100%>
+<img src="images/api5.PNG" width=60% height=60%>
 
 #### Set up local Environment Variables for API Keys
 * Local Environment Variables (in Linux Ubuntu WSL)
@@ -78,28 +78,28 @@ Here is how to get the `requirements.txt` file.
 
 1. Run `python3 flask-app-file.py`
 
-<img src="images/api6.PNG" width=100% height=100%>
+<img src="images/api6.PNG" width=60% height=60%>
 
 2. Now, you can go to the `localhost` or `127.0.0.1/5000` to see the home page. The port number maybe different - double check!
 
-<img src="images/api7.PNG" width=80% height=80%>
+<img src="images/api7.PNG" width=70% height=70%>
 
 3. Click on 1st button and enter your request to the **ChatGPT API**.
 
-<img src="images/api8.PNG" width=80% height=80%>
+<img src="images/api8.PNG" width=70% height=70%>
 
 4. You can also test the **YouTube Transcribe**<br>
 * Go on YouTube and get a valid URL
 
-<img src="images/api9.PNG" width=80% height=80%>
+<img src="images/api9.PNG" width=70% height=70%>
 
 * Paste the URL in the form - you can get to the form by clicking the button `YouTube Transcribe`.
 
-<img src="images/api10.PNG" width=100% height=100%>
+<img src="images/api10.PNG" width=60% height=60%>
 
 Make sure you clean up your system, the **YouTube Transcribe** app will download `.mp4` files like it shows below. You can also ignore the files in `.gitignore` file:
 
-<img src="images/api11.PNG" width=80% height=80%>
+<img src="images/api11.PNG" width=60% height=60%>
 
 ### 4. Set up Jenkins server and integrate it to GitHub
 
