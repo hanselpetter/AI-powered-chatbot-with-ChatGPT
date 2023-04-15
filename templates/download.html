@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatGPT</title>
+    <title>YouTube Downloader</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #e8e5e5;
+        background-color: #f4f4f4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +46,7 @@
       }
 
       #submitBtn {
-        background-color: #354cc0;
+        background-color: #dc2f29;
         color: white;
         border: none;
         border-radius: 5px;
@@ -56,7 +56,7 @@
       }
 
       #submitBtn:hover {
-        background-color: #457ba0;
+        background-color: #45a049;
       }
 
       #result {
@@ -71,42 +71,17 @@
   </head>
   <body>
     <div class="chat-container">
-      <h1>ChatGPT Bot</h1>
+      <h1>YouTube Downloader</h1>
       <form id="chat-form">
         <input
           type="text"
           id="user-input"
-          name="u_input"
-          placeholder="Type your message..."
+          name="user_input"
+          placeholder="Paste the YouTube video link here ..."
         />
-        <button type="submit" id="submitBtn">Ask</button>
+        <button type="submit" id="submitBtn">Download</button>
       </form>
-      <div id="result"></div>
+      <div id="result"><p style="color:#FF0000";>UNDER CONSTRUCTION</p></div>
     </div>
-
-    <script>
-      window.onload = function () {
-        document
-          .getElementById("chat-form")
-          .addEventListener("submit", function (event) {
-            // Prevent the form from submitting and refreshing the page
-            event.preventDefault();
-
-            let userInput = document.getElementById("user-input").value;
-            let url = `/gpt?u_input=${encodeURIComponent(userInput)}`;
-
-            fetch(url)
-              .then((response) => response.json())
-              .then((data) => {
-                let content = data.content;
-                let resultDiv = document.getElementById("result");
-                resultDiv.innerHTML = content;
-              })
-              .catch((error) => {
-                console.error("API Call Error, retry again:", error);
-              });
-          });
-      };
-    </script>
   </body>
 </html>
