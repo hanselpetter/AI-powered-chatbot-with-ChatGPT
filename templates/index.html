@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>welcome page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #98989a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      margin: 0;
+    }
+
+  </style>
+
+<body>
+  <div class="container">
+    <body style="background-color:rgb(241, 244, 240);"></body>
+    <h1 style="text-align:center;">Welcome Page</h1>
+    <h3 style="text-align:center;" >Click to choose your action</h3>
+    <button onclick="redirectToPage1()" type="Button" style="background-color: #a6d4b7; height: 75px; width: 150px;cursor: pointer">ChatGPT Bot</button>
+    <button onclick="redirectToPage2()" type="Button" style="background-color: #a6d4b7; height: 75px; width: 150px;cursor: pointer">YouTube Downloader</button>
+    <button onclick="redirectToPage3()" type="Button" style="background-color: #a6d4b7; height: 75px; width: 150px;cursor: pointer">Coming Soon</button>
+    <button onclick="redirectToPage4()" type="Button" style="background-color: #a6d4b7; height: 75px; width: 150px;cursor: pointer">Coming Soon</button>
+  </div>
+  <script>
+    function redirectToPage1() {
+      window.location.href = "/gpt";
+    }
+    function redirectToPage2() {
+      window.location.href = "/download";
+    }
+    function redirectToPage3() {
+      window.location.href = "/p3.html";
+    }
+  </script>
+</body>
+</html>
