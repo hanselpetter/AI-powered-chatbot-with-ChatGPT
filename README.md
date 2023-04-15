@@ -17,8 +17,8 @@ We are building Flask web applications with a user interfaces:
 * **CSP**: AWS
 
 ### 2. Architechtures
-  a. Apllications Architechtures
-  b. CI/CD Pipeline
+* Apllications Architechtures
+* CI/CD Pipeline
 
 This is the workflow of the pipeline.
 
