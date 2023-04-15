@@ -17,11 +17,10 @@ We are building Flask web applications with a user interfaces:
 * **CSP**: AWS
 
 ### 2. Architechtures
-    a. Apllications Architechtures
+  a. Apllications Architechtures
+  b. CI/CD Pipeline
 
-    b. CI/CD Pipeline
-
-    This is the workflow of the pipeline.
+This is the workflow of the pipeline.
 
 <img src="images/api1.png" width=60% height=60%>
 
