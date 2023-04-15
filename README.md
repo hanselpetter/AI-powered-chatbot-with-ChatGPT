@@ -5,6 +5,11 @@ We are building Flask web applications with a user interfaces:
 * A Python YouTube video Downloader
 * And more to come ...
 
+### 0. Good to know
+* Basic cloud computing knowledge
+* SSH into a server
+* Basic scripting
+
 ### 1. Software Tools
 * **Languages**: Python, HTML, CSS, Flask
 * **CI/CD**: Jenkins
