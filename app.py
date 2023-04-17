@@ -45,7 +45,7 @@ def _turbo():
 
 #####################################################################################################
 
-########################################## Youtube Downloader #######################################
+######################################### YouTube Downloader ########################################
 # Youtube Downloader
 @app.route("/download", methods = ['GET', 'POST'])
 def downloader():
@@ -67,7 +67,7 @@ def page3():
 def transcript():
     return render_template('transcript.html')
 
-@app.route('/transcript1', methods=['POST'])
+@app.route('/transcript1', methods=['GET', 'POST'])
 def transcript1():
     video_url = request.form['video_url']
     try:
