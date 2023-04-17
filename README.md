@@ -49,6 +49,7 @@ source virtual_environment_name/bin/activate
 ```
 pip install --upgrade
 pip install flask
+pip install pytest
 pip install openai
 pip install pytube3
 pip install youtube_transcript_api
@@ -94,11 +95,15 @@ Here is how to get the `requirements.txt` file.
 
 * Paste the URL in the form - you can get to the form by clicking the button `YouTube Transcribe`.
 
-<img src="images/api10.PNG" width=60% height=60%>
+<img src="images/api10.PNG" width=140% height=150%>
 
 Make sure you clean up your system, the **YouTube Transcribe** app will download `.mp4` files like it shows below. You can also ignore the files in `.gitignore` file:
 
-<img src="images/api11.PNG" width=60% height=60%>
+<img src="images/api11.PNG" width=80% height=80%>
+
+5. Set up test files to test your code. You can use a simple status code check with **pytest**.
+
+<img src="images/api12.PNG" width=80% height=80%>
 
 ### 4. Set up Jenkins server and integrate it to GitHub
 
@@ -120,4 +125,5 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
     * [Sebastian](https://medium.com/codingthesmartway-com-blog/how-to-create-an-ai-powered-python-web-app-with-flask-and-gpt-4-api-907dcffd1221)
 5. YouTube Transcript [Generator](https://python.plainenglish.io/how-to-create-a-youtube-transcript-generator-web-app-with-python-flask-with-chatgpt-57b5ce859db4)
 6.  [codegpt](https://www.codegpt.co/docs/tutorial-basics/installation) | [blog.devgenius](https://blog.devgenius.io/chatgpt-how-to-use-it-with-python-5d729ac34c0d) | [Youtube](https://www.youtube.com/watch?v=w-X_EQ2Xva4) | [AIAdvantage](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
+7. Fask app [testing](https://flask.palletsprojects.com/en/2.2.x/testing/)
 
