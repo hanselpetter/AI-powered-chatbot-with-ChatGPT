@@ -95,11 +95,15 @@ Here is how to get the `requirements.txt` file.
 
 * Paste the URL in the form - you can get to the form by clicking the button `YouTube Transcribe`.
 
-<img src="images/api10.PNG" width=100% height=100%>
+<img src="images/api10.PNG" width=140% height=150%>
 
 Make sure you clean up your system, the **YouTube Transcribe** app will download `.mp4` files like it shows below. You can also ignore the files in `.gitignore` file:
 
 <img src="images/api11.PNG" width=80% height=80%>
+
+5. Set up test files to test your code. You can use a simple status code check with **pytest**.
+
+<img src="images/api12.PNG" width=80% height=80%>
 
 ### 4. Set up Jenkins server and integrate it to GitHub
 
