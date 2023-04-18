@@ -105,11 +105,13 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
 
 <img src="images/api12.PNG" width=80% height=80%>
 
-### 4. Set up Jenkins server and integrate it to GitHub
+### 4. CI/CD - Backend
+Set up Jenkins server and integrate it to GitHub
 
 #### Set up Build, Test, and Deploy stages
 
-### 5. Set up Docker and DockerHub
+### 5. CI/CD Frontend
+### 6. Set up Docker and DockerHub
 
 #### Containerize the application
 1. Choose NGINX or Apache for Frontend
