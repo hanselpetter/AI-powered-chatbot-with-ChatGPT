@@ -76,7 +76,7 @@ Here is how to get the `requirements.txt` file.
 
 #### Start the Flask server
 
-1. Run `python3 flask-app-file.py`
+1. Run the command `python3 flask-app-file.py` or simply `flask run`.
 
 <img src="images/api6.PNG" width=60% height=60%>
 
@@ -105,11 +105,13 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
 
 <img src="images/api12.PNG" width=80% height=80%>
 
-### 4. Set up Jenkins server and integrate it to GitHub
+### 4. CI/CD - Backend
+Set up Jenkins server and integrate it to GitHub
 
 #### Set up Build, Test, and Deploy stages
 
-### 5. Set up Docker and DockerHub
+### 5. CI/CD Frontend
+### 6. Set up Docker and DockerHub
 
 #### Containerize the application
 1. Choose NGINX or Apache for Frontend
@@ -125,5 +127,5 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
     * [Sebastian](https://medium.com/codingthesmartway-com-blog/how-to-create-an-ai-powered-python-web-app-with-flask-and-gpt-4-api-907dcffd1221)
 5. YouTube Transcript [Generator](https://python.plainenglish.io/how-to-create-a-youtube-transcript-generator-web-app-with-python-flask-with-chatgpt-57b5ce859db4)
 6.  [codegpt](https://www.codegpt.co/docs/tutorial-basics/installation) | [blog.devgenius](https://blog.devgenius.io/chatgpt-how-to-use-it-with-python-5d729ac34c0d) | [Youtube](https://www.youtube.com/watch?v=w-X_EQ2Xva4) | [AIAdvantage](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
-7. Fask app [testing-1](https://flask.palletsprojects.com/en/2.2.x/testing/) | [testing-2](https://tedboy.github.io/flask/flask_doc.testing.html) | [testing-3](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a)
+7. Fask app [testing-1](https://flask.palletsprojects.com/en/2.2.x/testing/) | [testing-2](https://tedboy.github.io/flask/flask_doc.testing.html) | [testing-3](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a) | [Jenkins-Pytest](https://behainguyen.wordpress.com/2023/01/28/ci-cd-01-jenkins-manually-clone-a-python-github-repo-and-run-pytest/)
 
