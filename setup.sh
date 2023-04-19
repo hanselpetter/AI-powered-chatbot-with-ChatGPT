@@ -14,7 +14,8 @@ fi
 # $PYENV_HOME/bin/pytest
 
 echo "Installing pip and requirements..."
-pip install --upgrade
+# pip install --upgrade
+apt install python3-pip
 pip install virtualenv
 python3 -m venv $PYENV_HOME
 source $PYENV_HOME/bin/activate
