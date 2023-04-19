@@ -8,7 +8,14 @@ if [ -d $PYENV_HOME ]; then
 fi
 
 # Create virtualenv and install necessary packages
-virtualenv $PYENV_HOME
-. $PYENV_HOME/bin/activate
-$PYENV_HOME/bin/pip install -e .
-$PYENV_HOME/bin/pytest
+# virtualenv $PYENV_HOME
+# . $PYENV_HOME/bin/activate
+# $PYENV_HOME/bin/pip install -e .
+# $PYENV_HOME/bin/pytest
+
+echo "Installing pip and requirements..."
+sudo pip install --upgrade
+sudo pip install virtualenv
+python3 -m venv $PYENV_HOME
+source $PYENV_HOME/bin/activate
+pip install -r requirements.txt
