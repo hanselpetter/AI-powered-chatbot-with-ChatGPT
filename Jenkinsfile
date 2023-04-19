@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage("Build") {
             steps {
                 sh '''
                     echo "Setting up the virtual environment."
@@ -12,7 +12,7 @@ pipeline {
                    '''
             }
         }
-        stage('Test') {
+        stage("Test") {
             steps {
                 sh '''
                     echo "Running test script"
@@ -20,14 +20,13 @@ pipeline {
                    '''
             }
         }
-        stage('Email Notification') {
+        stage("Email Notification") {
             steps {
                 mail(body: "${JOB_NAME}, build ${BUILD_NUMBER} Pytest completed.", subject: 'Pytest completed.', to: 'ibrahima.diallo1289@gmail.com')
                 }
             }
             post {
                 always {
-                    sh 'echo "The pipeline completed"'
                     junit 'test_result/test_result_${BUILD_NUMBER}.xml'
                 }
                 success {                   
