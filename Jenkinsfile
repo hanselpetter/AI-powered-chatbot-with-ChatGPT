@@ -27,7 +27,7 @@ pipeline {
             }
             post {
                 always {
-                    echo 'The pipeline completed'
+                    sh 'echo "The pipeline completed"'
                     junit 'test_result/test_result_${BUILD_NUMBER}.xml'
                 }
                 success {                   
