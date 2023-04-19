@@ -5,8 +5,8 @@ pipeline {
             steps {
                 sh '''
                     echo "Setting up the virtual environment."
-                    ./python-api/setup.sh
-                    pip install -r /python-api/requirements.txt
+                    ./setup.sh
+                    pip install -r requirements.txt
                     echo "Running the Flask server"
                     flask run
                    '''
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Running test script"
-                    python3 /python-api/test.py
+                    python3 test.py
                    '''
             }
         }
