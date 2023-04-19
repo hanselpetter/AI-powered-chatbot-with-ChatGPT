@@ -19,6 +19,7 @@ pipeline {
                     python3 /python-api/test.py
                    '''
             }
+        }
         stage('Email Notification') {
             steps {
                 mail(body: "${JOB_NAME}, build ${BUILD_NUMBER} Pytest completed.", subject: 'Pytest completed.', to: 'ibrahima.diallo1289@gmail.com')
@@ -35,8 +36,7 @@ pipeline {
                 failure {
                     echo 'Build stage failed'
                     error('Stopping early…')
-        }
+                }
             }
         }
     }
-}
