@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     echo "Setting up the virtual environment."
                     ./python-api/setup.sh
-                    pip install -r ./python-api/requirements.txt
+                    pip install -r /python-api/requirements.txt
                     echo "Running the Flask server"
                     flask run
                    '''
@@ -16,12 +16,12 @@ pipeline {
             steps {
                 sh '''
                     echo "Running test script"
-                    python3 ./python-api/test.py
+                    python3 /python-api/test.py
                    '''
             }
         stage('Email Notification') {
             steps {
-                mail(body: "${JOB_NAME}, build ${BUILD_NUMBER} Pytest completed.", subject: 'Pytest completed.', to: 'i@gmail.com')
+                mail(body: "${JOB_NAME}, build ${BUILD_NUMBER} Pytest completed.", subject: 'Pytest completed.', to: 'ibrahima.diallo1289@gmail.com')
                 }
             }
             post {
