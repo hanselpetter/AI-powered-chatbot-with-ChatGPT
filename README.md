@@ -106,15 +106,19 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
 <img src="images/api12.PNG" width=80% height=80%>
 
 ### 4. CI/CD - Backend
-Set up Jenkins server and [integrate](https://www.cprime.com/resources/blog/how-to-integrate-jenkins-github/) it to GitHub using a webhook.
+* Set up Jenkins server and [integrate](https://www.cprime.com/resources/blog/how-to-integrate-jenkins-github/) it to GitHub using a webhook.
+* You can also set up [email](https://medium.com/@arun.dev/get-email-notification-for-jenkins-build-failure-and-success-d59154dc639a) notification in case the pipeline fails.
 
-#### Set up Build, Test, and Deploy stages
+#### Set up Build, Test, and Deploy (Push docker image) stages
 
 ### 5. CI/CD Frontend
 ### 6. Set up Docker and DockerHub
+* Follow this [link](https://docs.docker.com/docker-hub/quickstart/) to set up a docker/dockerhub account.
 
 #### Containerize the application
 1. Choose NGINX or Apache for Frontend
+2. Set up deploy stage - push docker image to AWS using this [AWS ECR - Medium](https://medium.com/@vijulpatel865/building-docker-image-using-jenkins-pipeline-push-it-to-aws-ecr-aa02cc7a295e) doc or [AWS ECR - OCTOPUS](https://octopus.com/blog/jenkins-docker-ecr).
+3. For **Practice**, push docker image to [DockerHub](https://www.brightbox.com/blog/2018/01/22/push-builds-to-dockerhub/).
 
 ### 6. Set Up AWS (EC2 Server with Docker installed or Use Fargate)
 
@@ -127,7 +131,7 @@ Set up Jenkins server and [integrate](https://www.cprime.com/resources/blog/how-
     * [Sebastian](https://medium.com/codingthesmartway-com-blog/how-to-create-an-ai-powered-python-web-app-with-flask-and-gpt-4-api-907dcffd1221)
 5. YouTube Transcript [Generator](https://python.plainenglish.io/how-to-create-a-youtube-transcript-generator-web-app-with-python-flask-with-chatgpt-57b5ce859db4)
 6.  [codegpt](https://www.codegpt.co/docs/tutorial-basics/installation) | [blog.devgenius](https://blog.devgenius.io/chatgpt-how-to-use-it-with-python-5d729ac34c0d) | [Youtube](https://www.youtube.com/watch?v=w-X_EQ2Xva4) | [AIAdvantage](https://github.com/AIAdvantage/chatgpt-api-youtube/blob/main/02%20chatgpt%20chat%20assistant%20copy.py)
-7. Fask app [testing-1](https://flask.palletsprojects.com/en/2.2.x/testing/) | [testing-2](https://tedboy.github.io/flask/flask_doc.testing.html) | [testing-3](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a) | [Jenkins-Pytest](https://behainguyen.wordpress.com/2023/01/28/ci-cd-01-jenkins-manually-clone-a-python-github-repo-and-run-pytest/)
+7. Fask app [testing-1](https://flask.palletsprojects.com/en/2.2.x/testing/) | [testing-2](https://tedboy.github.io/flask/flask_doc.testing.html) | [testing-3](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a) | [Jenkins-Pytest](https://behainguyen.wordpress.com/2023/01/28/ci-cd-01-jenkins-manually-clone-a-python-github-repo-and-run-pytest/) | [Github-Action Pytest](https://medium.com/globant/how-to-add-a-basic-unit-test-to-a-python-flask-app-using-pytest-79e61da76fc2)
 8. [iamnearlythere.com](https://iamnearlythere.com/)
 9. [EC2 ami locator](https://cloud-images.ubuntu.com/locator/ec2/)
 

@@ -15,26 +15,20 @@ pipeline {
                    '''
             }
         }
-        stage("Email Notification") {
+        stage("Push to DockerHub") {
             steps {
-                mail(
-                    body: "Build and Test completed.", 
-                    subject: 'Pytest completed.', 
-                    to: 'ibrahima.diallo1289@gmail.com')
-                    }
-                }
+                sh '''
+                    echo "Deploying to DockerHub"
+                   '''
             }
-            post {
-                always {
-                    junit 'test_result/test_result.xml'
-                }
-                success {                   
-                    echo "Flask App Up and running!!"
-                }
-                failure {
-                    echo 'Build stage failed'
-                    error('Stopping early…')
-                }
+        }
+        stage("Push to AWS ECR") {
+            steps {
+                sh '''
+                    echo "Deploying docker image to ECR"
+                   '''
+            }
+        }
         
     }
 }
