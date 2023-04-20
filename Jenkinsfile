@@ -4,8 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh '''
-                    echo "Setting up the virtual environment."
-                    ./setup.sh
+                    echo "Checking out SCM."
                    '''
             }
         }
@@ -13,10 +12,26 @@ pipeline {
             steps {
                 sh '''
                     echo "Running test script"
-                    python3 test.py
                    '''
             }
         }
+        stage("Email Notification") {
+            steps {
+                mail(body: "${JOB_NAME}, build ${BUILD_NUMBER} Pytest completed.", subject: 'Pytest completed.', to: 'ibrahima.diallo1289@gmail.com')
+                    }
+                }
+            }
+            post {
+                always {
+                    junit 'test_result/test_result_${BUILD_NUMBER}.xml'
+                }
+                success {                   
+                    echo "Flask App Up and running!!"
+                }
+                failure {
+                    echo 'Build stage failed'
+                    error('Stopping early…')
+                }
         
     }
 }
