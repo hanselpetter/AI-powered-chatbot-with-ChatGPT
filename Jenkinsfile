@@ -26,7 +26,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'test_result/test_result_${BUILD_NUMBER}.xml'
+                    junit 'test_result/test_result.xml'
                 }
                 success {                   
                     echo "Flask App Up and running!!"
