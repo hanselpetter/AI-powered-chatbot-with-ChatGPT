@@ -21,16 +21,17 @@
 # source $PYENV_HOME/bin/activate
 # pip install -r requirements.txt
 
-PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH
-if [ ! -d "venv" ]; then
-        virtualenv venv
+PATH=$WORKSPACE/venv
+if [ -d "venv" ]; then
+    rm -rf $PATH
 fi
 
 echo "Activating virtual environment ..."
-. venv/bin/activate
+pip install --upgrade
+# . venv/bin/activate
 
-echo "Installing pip and requirements..."
-pip install -r requirements.txt --download-cache=/tmp/$JOB_NAME
+# echo "Installing pip and requirements..."
+# pip install -r requirements.txt --download-cache=/tmp/$JOB_NAME
 
-echo "Running the Flask server ..."
-flask run
+# echo "Running the Flask server ..."
+# flask run
