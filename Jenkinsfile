@@ -6,9 +6,6 @@ pipeline {
                 sh '''
                     echo "Setting up the virtual environment."
                     ./setup.sh
-                    pip install -r requirements.txt
-                    echo "Running the Flask server"
-                    flask run
                    '''
             }
         }
