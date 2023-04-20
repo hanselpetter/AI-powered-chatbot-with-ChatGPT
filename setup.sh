@@ -27,8 +27,9 @@ if [ -d "venv" ]; then
 fi
 
 echo "Activating virtual environment ..."
-sudo apt install python3-pip
-python3 -m venv $PATH
+sudo apt install python3-pip -y
+sudo apt install python3.8-venv
+sudo python3 -m venv $PATH
 # . venv/bin/activate
 
 # echo "Installing pip and requirements..."
