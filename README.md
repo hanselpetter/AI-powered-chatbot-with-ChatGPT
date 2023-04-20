@@ -82,16 +82,16 @@ Here is how to get the `requirements.txt` file.
 
 2. Now, you can go to the `localhost` or `127.0.0.1/5000` to see the home page. The port number maybe different - double check!
 
-<img src="images/api7.PNG" width=70% height=70%>
+<img src="images/api7.PNG" width=60% height=60%>
 
 3. Click on 1st button and enter your request to the **ChatGPT API**.
 
-<img src="images/api8.PNG" width=70% height=70%>
+<img src="images/api8.PNG" width=60% height=60%>
 
 4. You can also test the **YouTube Transcribe**<br>
 * Go on YouTube and get a valid URL
 
-<img src="images/api9.PNG" width=70% height=70%>
+<img src="images/api9.PNG" width=60% height=60%>
 
 * Paste the URL in the form - you can get to the form by clicking the button `YouTube Transcribe`.
 
@@ -99,17 +99,19 @@ Here is how to get the `requirements.txt` file.
 
 Make sure you clean up your system, the **YouTube Transcribe** app will download `.mp4` files like it shows below. You can also ignore the files in `.gitignore` file:
 
-<img src="images/api11.PNG" width=80% height=80%>
+<img src="images/api11.PNG" width=60% height=60%>
 
 5. Set up test files to test your code. You can use a simple status code check with **pytest**.
 
-<img src="images/api12.PNG" width=80% height=80%>
+<img src="images/api12.PNG" width=70% height=70%>
 
 ### 4. CI/CD - Backend
 * Set up Jenkins server and [integrate](https://www.cprime.com/resources/blog/how-to-integrate-jenkins-github/) it to GitHub using a webhook.
 * You can also set up [email](https://medium.com/@arun.dev/get-email-notification-for-jenkins-build-failure-and-success-d59154dc639a) notification in case the pipeline fails.
 
 #### Set up Build, Test, and Deploy (Push docker image) stages
+
+<img src="images/api13.PNG" width=80% height=80%>
 
 ### 5. CI/CD Frontend
 ### 6. Set up Docker and DockerHub
