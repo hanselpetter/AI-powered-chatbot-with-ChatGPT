@@ -113,6 +113,7 @@ Make sure you clean up your system, the **YouTube Transcribe** app will download
 
 <img src="images/api13.PNG" width=80% height=80%>
 
+
 ### 5. CI/CD Frontend
 ### 6. Set up Docker and DockerHub
 * Follow this [link](https://docs.docker.com/docker-hub/quickstart/) to set up a docker/dockerhub account.
