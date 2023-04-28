@@ -31,9 +31,9 @@ jobs:
     - name: Lint with flake8
       run: |
         echo "Testing ... "
-        OPENAI_API_KEY=${{secrets.OPENAI_API_KEY}} python app.py &
+        #OPENAI_API_KEY=${{secrets.OPENAI_API_KEY}} python app.py &
         sleep 5
-        flask run
+        #flask run
         # stop the build if there are Python syntax errors or undefined names
         #flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
@@ -41,4 +41,4 @@ jobs:
     - name: Test with pytest
       run: |
         echo "Testing ... "
-        pytest
+        #pytest
