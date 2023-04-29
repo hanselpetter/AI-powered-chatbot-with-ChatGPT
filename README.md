@@ -1,5 +1,5 @@
 ## API-Powered Applications
-![python-api](https://github.com/ibrahima1289/python-api/actions/workflows/python-app.yml/badge.svg)<br>
+[![python-api](https://github.com/ibrahima1289/python-api/actions/workflows/python-app.yml/badge.svg)](https://github.com/ibrahima1289/python-api/actions/workflows/python-app.yml/badge.svg)<br>
 This project is for learning and practicing APIs integration and Flask. See sources linked below.<br>
 We are building Flask web applications with a user interfaces:
 * An AI-powered chatbot with ChatGPT `gpt-3.5-turbo` model
