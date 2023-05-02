@@ -34,7 +34,7 @@ jobs:
     - name: Lint with flake8
       run: |
         echo "Linting ... "
-        OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} python app.py
+        OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} python ./app.py
         echo $OPENAI_API_KEY
         #flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         #flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
