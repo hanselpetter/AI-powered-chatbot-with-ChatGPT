@@ -2,21 +2,15 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: python-api
-
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -27,18 +21,41 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
+        pip install -e .
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+  
+  tests:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Unit Test
+      run: |
+          echo "Unit Testing..."
     - name: Lint with flake8
       run: |
-        echo "Testing ... "
-        #OPENAI_API_KEY=${{secrets.OPENAI_API_KEY}} python app.py &
-        sleep 5
-        #flask run
-        # stop the build if there are Python syntax errors or undefined names
+        echo "Linting ... "
+        OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} python app.py
+        echo $OPENAI_API_KEY
         #flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         #flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        echo "Testing ... "
-        #pytest
+        echo "Testing with Pytest... "
+        #pytest tests -vv -rf -x > unit-test-result.log
+      continue-on-error: true
+  
+  containerize:
+    needs: [build, tests]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set Up Environment
+      run: |
+        echo "Installing Docker..."
+    - name: Build Docker Image
+      run: |
+          echo "Building Docker Image..."
+    - name: Push image to AWS
+      run: |
+        echo "Pshing Docker Image to AWS..."
+        
+        
