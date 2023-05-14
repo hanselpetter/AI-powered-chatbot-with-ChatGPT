@@ -92,7 +92,7 @@ Here is how to get the `requirements.txt` file.
 4. You can also test the **YouTube Transcribe**<br>
 * Go on YouTube and get a valid URL
 
-<img src="images/api9.PNG" width=60% height=60%>
+<!-- <img src="images/api9.PNG" width=60% height=60%> -->
 
 * Paste the URL in the form - you can get to the form by clicking the button `YouTube Transcribe`.
 
